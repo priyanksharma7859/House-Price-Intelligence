@@ -155,7 +155,7 @@
         @media(max-width:500px){.kpi-grid{grid-template-columns:1fr}.hero h1{letter-spacing:-1px}.result{padding:29px 18px 25px}}
 
         /* ================= STEP 2: AI ANALYSIS UPGRADE ================= */
-        .investment-card{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(0,200,150,.12),rgba(79,140,255,.09),rgba(123,97,255,.08))}
+        .investment-card{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(0,200,150,.06),rgba(79,140,255,.09),rgba(123,97,255,.08))}
         .investment-card:before,.decision-card:before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-90px;top:-110px;background:radial-gradient(circle,rgba(0,200,150,.20),transparent 68%);pointer-events:none}
         .ai-section-badge{display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border-radius:999px;background:rgba(0,200,150,.09);border:1px solid rgba(0,200,150,.18);color:#9fe7d2;font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase}
         .ai-section-badge .live-dot{width:6px;height:6px}
@@ -170,7 +170,7 @@
         .decision-card{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(123,97,255,.14),rgba(0,200,150,.10),rgba(79,140,255,.08))}
         .decision-main{position:relative;overflow:hidden;box-shadow:0 15px 40px rgba(0,0,0,.15)}
         .decision-main:after{content:"";position:absolute;right:-35px;bottom:-55px;width:150px;height:150px;border-radius:50%;background:rgba(0,200,150,.09);filter:blur(3px)}
-        .decision-icon-large{box-shadow:0 0 25px rgba(0,200,150,.12)}
+        .decision-icon-large{box-shadow:0 0 25px rgba(0,200,150,.06)}
         .decision-title{font-size:28px}
         .decision-action{display:inline-flex;align-items:center;gap:7px;margin-top:12px;padding:7px 10px;border-radius:9px;background:rgba(0,200,150,.09);color:#9fe7d2;font-size:10px;font-weight:800;letter-spacing:.8px;text-transform:uppercase}
         .decision-note{background:rgba(0,0,0,.12)}
@@ -360,7 +360,20 @@
             }
         }
 
-    </style>
+    
+        .financial-guidance{margin-top:18px;padding:22px 24px;border-radius:20px;border:1px solid rgba(141,181,255,.20);background:linear-gradient(135deg,rgba(79,140,255,.11),rgba(0,200,150,.07));box-shadow:0 14px 38px rgba(0,0,0,.14)}
+        .financial-guidance h3{font-size:18px;margin-bottom:10px;color:#edf4ff}
+        .financial-guidance p{font-size:13px;line-height:1.75;color:#c3d0e3;margin:7px 0}
+        .financial-guidance .guidance-tag{display:inline-block;font-size:11px;letter-spacing:.8px;text-transform:uppercase;padding:6px 10px;border-radius:20px;margin-bottom:10px;background:rgba(79,140,255,.15);border:1px solid rgba(141,181,255,.2);color:#d7e5ff}
+        .financial-guidance .guidance-warning{margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,.1);font-size:11px;color:#9eacc2}
+
+        .financial-guidance { display:block !important; visibility:visible !important; opacity:1 !important; position:relative; z-index:5; margin:24px 0; padding:24px; border:1px solid rgba(88,166,255,.55); border-radius:20px; background:linear-gradient(135deg,rgba(17,31,58,.98),rgba(31,23,66,.96)); color:#f4f7ff; box-shadow:0 14px 42px rgba(0,0,0,.28); }
+        .financial-guidance h3 { margin:14px 0 10px; color:#fff; }
+        .financial-guidance p { color:#e4eaff; line-height:1.7; margin:10px 0; }
+        .financial-guidance .guidance-tag { display:inline-block; padding:8px 12px; border-radius:999px; background:rgba(87,145,255,.18); border:1px solid rgba(87,145,255,.45); color:#dce8ff; font-weight:700; }
+        .financial-guidance .guidance-warning { margin-top:14px; padding:12px; border-radius:12px; background:rgba(255,255,255,.06); color:#cbd5e1; font-size:.9rem; line-height:1.6; }
+        @media(max-width:600px){ .financial-guidance{padding:17px;margin:18px 0;border-radius:16px;} .financial-guidance p{font-size:.95rem;} }
+        </style>
 
 <style>
 /* STEP 4 — HISTORY + ANALYTICS */
@@ -375,48 +388,302 @@
 .compare-history-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.compare-history-property-premium{padding:18px;border-radius:18px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.07)}.compare-history-property-premium h3{margin:0 0 9px}.compare-history-property-premium p{margin:0;color:#a9b4cd;font-size:13px;line-height:1.8}.compare-history-price-premium{color:#fff;font-weight:800}.compare-winner-premium{margin-top:13px;padding:13px 15px;border-radius:14px;background:linear-gradient(90deg,rgba(72,180,120,.12),rgba(100,120,255,.08));border:1px solid rgba(100,200,150,.16);font-weight:700}
 @media(max-width:800px){.analytics-overview{grid-template-columns:repeat(2,1fr)}.compare-history-grid{grid-template-columns:1fr}}
 @media(max-width:500px){.analytics-overview{grid-template-columns:1fr 1fr}.history-premium,.comparison-history-premium{padding:19px}.history-item-premium{grid-template-columns:44px 1fr}.history-price-premium{grid-column:2;text-align:left}.history-head{align-items:flex-start;flex-direction:column}}
-</style>
+
+        .financial-guidance { display:block !important; visibility:visible !important; opacity:1 !important; position:relative; z-index:5; margin:24px 0; padding:24px; border:1px solid rgba(88,166,255,.55); border-radius:20px; background:linear-gradient(135deg,rgba(17,31,58,.98),rgba(31,23,66,.96)); color:#f4f7ff; box-shadow:0 14px 42px rgba(0,0,0,.28); }
+        .financial-guidance h3 { margin:14px 0 10px; color:#fff; }
+        .financial-guidance p { color:#e4eaff; line-height:1.7; margin:10px 0; }
+        .financial-guidance .guidance-tag { display:inline-block; padding:8px 12px; border-radius:999px; background:rgba(87,145,255,.18); border:1px solid rgba(87,145,255,.45); color:#dce8ff; font-weight:700; }
+        .financial-guidance .guidance-warning { margin-top:14px; padding:12px; border-radius:12px; background:rgba(255,255,255,.06); color:#cbd5e1; font-size:.9rem; line-height:1.6; }
+        @media(max-width:600px){ .financial-guidance{padding:17px;margin:18px 0;border-radius:16px;} .financial-guidance p{font-size:.95rem;} }
+        </style>
+
+
+<style>
+/* ================= CONTINUOUS AMBIENT AI BACKGROUND ================= */
+body { isolation:isolate; }
+#ambient-canvas {
+    position:fixed; inset:0; width:100%; height:100%;
+    z-index:0; pointer-events:none; opacity:.30;
+}
+.ambient-aurora {
+    position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden;
+    opacity:.38; filter:blur(48px);
+}
+.aurora-blob {
+    position:absolute; width:30vw; height:30vw; min-width:180px; min-height:180px;
+    border-radius:50%; mix-blend-mode:screen; will-change:transform;
+}
+.aurora-blob.blue {
+    top:3%; left:-8%;
+    background:radial-gradient(circle,rgba(36,119,255,.10),rgba(36,119,255,0) 68%);
+    animation:auroraDriftA 19s ease-in-out infinite alternate;
+}
+.aurora-blob.purple {
+    top:20%; right:-7%;
+    background:radial-gradient(circle,rgba(131,73,255,.10),rgba(131,73,255,0) 68%);
+    animation:auroraDriftB 23s ease-in-out infinite alternate;
+}
+.aurora-blob.teal {
+    bottom:-12%; left:30%;
+    background:radial-gradient(circle,rgba(0,200,150,.06),rgba(0,200,150,0) 68%);
+    animation:auroraDriftC 26s ease-in-out infinite alternate;
+}
+.ambient-grid {
+    position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.13;
+    background-image:linear-gradient(rgba(128,163,255,.10) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(128,163,255,.10) 1px,transparent 1px);
+    background-size:58px 58px;
+    mask-image:linear-gradient(to bottom,black,transparent 88%);
+    animation:gridSlide 36s linear infinite;
+}
+.container { z-index:1; }
+@keyframes auroraDriftA { from{transform:translate3d(0,0,0) scale(1)} to{transform:translate3d(17vw,10vh,0) scale(1.22)} }
+@keyframes auroraDriftB { from{transform:translate3d(0,0,0) scale(1)} to{transform:translate3d(-15vw,12vh,0) scale(1.16)} }
+@keyframes auroraDriftC { from{transform:translate3d(-7vw,0,0) scale(.9)} to{transform:translate3d(10vw,-12vh,0) scale(1.2)} }
+@keyframes gridSlide { from{background-position:0 0} to{background-position:58px 58px} }
+@media(max-width:700px) {
+    .ambient-aurora { opacity:.30; filter:blur(36px); }
+    .ambient-grid { background-size:44px 44px; }
+    #ambient-canvas { opacity:.22; }
+}
+@media(prefers-reduced-motion:reduce) {
+    .aurora-blob,.ambient-grid { animation:none !important; }
+    #ambient-canvas { display:none; }
+}
+
+        .financial-guidance { display:block !important; visibility:visible !important; opacity:1 !important; position:relative; z-index:5; margin:24px 0; padding:24px; border:1px solid rgba(88,166,255,.55); border-radius:20px; background:linear-gradient(135deg,rgba(17,31,58,.98),rgba(31,23,66,.96)); color:#f4f7ff; box-shadow:0 14px 42px rgba(0,0,0,.28); }
+        .financial-guidance h3 { margin:14px 0 10px; color:#fff; }
+        .financial-guidance p { color:#e4eaff; line-height:1.7; margin:10px 0; }
+        .financial-guidance .guidance-tag { display:inline-block; padding:8px 12px; border-radius:999px; background:rgba(87,145,255,.18); border:1px solid rgba(87,145,255,.45); color:#dce8ff; font-weight:700; }
+        .financial-guidance .guidance-warning { margin-top:14px; padding:12px; border-radius:12px; background:rgba(255,255,255,.06); color:#cbd5e1; font-size:.9rem; line-height:1.6; }
+        @media(max-width:600px){ .financial-guidance{padding:17px;margin:18px 0;border-radius:16px;} .financial-guidance p{font-size:.95rem;} }
+        </style>
+
+
+
+<style>
+/* CINEMATIC 3D DEPTH LAYER — visual-only enhancement; no Flask/Jinja logic changed */
+:root { --scene-perspective: 1400px; }
+body { perspective: var(--scene-perspective); }
+.container { transform-style: preserve-3d; }
+.header, .hero, .main-card, .compare-card, .performance-card, .graph-card,
+.insights-card, .investment-card, .decision-card, .history-premium,
+.comparison-history-premium, .analytics-tile, .feature {
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .28s ease, border-color .28s ease, box-shadow .28s ease;
+    box-shadow: 0 22px 55px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.055);
+}
+.hero { transform: translateZ(12px); }
+.header { transform: translateZ(8px); }
+.main-card, .compare-card, .performance-card, .graph-card,
+.insights-card, .investment-card, .decision-card,
+.history-premium, .comparison-history-premium { transform: translateZ(5px); }
+.hero:before {
+    content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none;
+    background:linear-gradient(115deg,rgba(255,255,255,.075),transparent 28%,transparent 68%,rgba(126,151,255,.045));
+    transform:translateZ(2px); opacity:.7;
+}
+.main-card:hover, .compare-card:hover, .performance-card:hover, .graph-card:hover,
+.insights-card:hover, .investment-card:hover, .decision-card:hover,
+.history-premium:hover, .comparison-history-premium:hover {
+    border-color:rgba(141,181,255,.27);
+    box-shadow:0 30px 72px rgba(0,0,0,.31),0 0 30px rgba(79,140,255,.055),inset 0 1px 0 rgba(255,255,255,.08);
+}
+.analytics-tile:hover, .feature:hover { box-shadow:0 22px 48px rgba(0,0,0,.28),0 0 25px rgba(105,133,255,.08); }
+.hero-stat { box-shadow:0 8px 22px rgba(0,0,0,.13); transition:transform .25s ease, background .25s ease; }
+.hero-stat:hover { transform:translateY(-4px) translateZ(10px); background:rgba(255,255,255,.09); }
+.predict-btn, .compare-btn { position:relative; overflow:hidden; }
+.predict-btn:after, .compare-btn:after {
+    content:""; position:absolute; top:-70%; left:-45%; width:35%; height:240%;
+    transform:rotate(25deg); background:linear-gradient(90deg,transparent,rgba(255,255,255,.22),transparent);
+    transition:left .65s ease; pointer-events:none;
+}
+.predict-btn:hover:after, .compare-btn:hover:after { left:125%; }
+@media (hover:hover) and (pointer:fine) {
+    .main-card, .compare-card, .performance-card, .graph-card, .insights-card,
+    .investment-card, .decision-card, .analytics-tile, .feature, .property-box,
+    .comparison-result-card, .history-premium, .comparison-history-premium {
+        transition:transform .18s ease-out, box-shadow .25s ease, border-color .25s ease;
+    }
+}
+@media (max-width:750px) {
+    .header, .hero, .main-card, .compare-card, .performance-card, .graph-card,
+    .insights-card, .investment-card, .decision-card, .history-premium,
+    .comparison-history-premium { transform:none !important; }
+}
+@media (prefers-reduced-motion:reduce) {
+    *, *:before, *:after { scroll-behavior:auto !important; transition:none !important; animation:none !important; }
+}
+
+        .financial-guidance { display:block !important; visibility:visible !important; opacity:1 !important; position:relative; z-index:5; margin:24px 0; padding:24px; border:1px solid rgba(88,166,255,.55); border-radius:20px; background:linear-gradient(135deg,rgba(17,31,58,.98),rgba(31,23,66,.96)); color:#f4f7ff; box-shadow:0 14px 42px rgba(0,0,0,.28); }
+        .financial-guidance h3 { margin:14px 0 10px; color:#fff; }
+        .financial-guidance p { color:#e4eaff; line-height:1.7; margin:10px 0; }
+        .financial-guidance .guidance-tag { display:inline-block; padding:8px 12px; border-radius:999px; background:rgba(87,145,255,.18); border:1px solid rgba(87,145,255,.45); color:#dce8ff; font-weight:700; }
+        .financial-guidance .guidance-warning { margin-top:14px; padding:12px; border-radius:12px; background:rgba(255,255,255,.06); color:#cbd5e1; font-size:.9rem; line-height:1.6; }
+        @media(max-width:600px){ .financial-guidance{padding:17px;margin:18px 0;border-radius:16px;} .financial-guidance p{font-size:.95rem;} }
+        </style>
+
+
+<style>
+/* ================= AI PROPERTY UNIVERSE SPLASH ================= */
+#welcome-screen{isolation:isolate;background:radial-gradient(ellipse at 50% 42%,#112a57 0%,#081329 38%,#030611 76%,#02040b 100%);}
+.universe-stars{position:absolute;inset:0;opacity:.65;background-image:radial-gradient(1px 1px at 12% 20%,#bdeaff 98%,transparent),radial-gradient(2px 2px at 80% 18%,#fff 98%,transparent),radial-gradient(1px 1px at 65% 76%,#91caff 98%,transparent),radial-gradient(1px 1px at 28% 72%,#fff 98%,transparent),radial-gradient(2px 2px at 92% 60%,#8c9eff 98%,transparent),radial-gradient(1px 1px at 42% 12%,#fff 98%,transparent);background-size:310px 260px;animation:universeStarDrift 24s linear infinite;}
+.universe-nebula{position:absolute;width:min(65vw,700px);aspect-ratio:1;border-radius:50%;filter:blur(70px);opacity:.22;pointer-events:none;}
+.nebula-a{background:#176dff;left:-24%;top:5%;animation:universeNebulaA 11s ease-in-out infinite alternate;}
+.nebula-b{background:#8b36ff;right:-25%;bottom:-18%;animation:universeNebulaB 13s ease-in-out infinite alternate;}
+.universe-grid{position:absolute;left:-30%;right:-30%;bottom:-34%;height:68%;opacity:.2;background-image:linear-gradient(rgba(72,158,255,.36) 1px,transparent 1px),linear-gradient(90deg,rgba(72,158,255,.36) 1px,transparent 1px);background-size:48px 48px;transform:perspective(320px) rotateX(62deg);mask-image:linear-gradient(to top,black,transparent 85%);animation:universeGridMove 7s linear infinite;}
+.universe-scene{position:absolute;top:7%;left:50%;width:min(92vw,620px);height:min(52vh,420px);min-height:280px;transform:translateX(-50%);perspective:1000px;animation:universeSceneFloat 5s ease-in-out infinite;}
+.universe-house-platform{position:absolute;left:50%;top:49%;width:260px;height:230px;transform:translate(-50%,-50%);}
+.universe-orbit{position:absolute;left:50%;top:52%;border:1px solid rgba(92,194,255,.52);border-radius:50%;transform-style:preserve-3d;box-shadow:0 0 22px rgba(42,151,255,.13),inset 0 0 18px rgba(42,151,255,.08);}
+.orbit-one{width:320px;height:105px;transform:translate(-50%,-50%) rotateX(68deg);animation:universeOrbitOne 8s linear infinite;}
+.orbit-two{width:275px;height:150px;border-color:rgba(171,105,255,.5);transform:translate(-50%,-50%) rotateX(67deg) rotateZ(55deg);animation:universeOrbitTwo 12s linear infinite;}
+.orbit-three{width:370px;height:175px;border-style:dashed;border-color:rgba(73,171,255,.22);transform:translate(-50%,-50%) rotateX(72deg) rotateZ(-25deg);animation:universeOrbitOne 20s linear infinite reverse;}
+.universe-scan{position:absolute;left:50%;top:52%;width:210px;height:2px;background:linear-gradient(90deg,transparent,rgba(88,225,255,.95),transparent);box-shadow:0 0 15px #48bfff;transform:translate(-50%,-50%);animation:universeScan 3s ease-in-out infinite;}
+.platform-ring{position:absolute;left:50%;top:73%;width:230px;height:70px;border:2px solid rgba(83,190,255,.65);border-radius:50%;transform:translate(-50%,-50%) rotateX(68deg);box-shadow:0 0 20px rgba(32,153,255,.55),inset 0 0 18px rgba(32,153,255,.25);animation:platformPulse 2.6s ease-in-out infinite;}
+.holo-house{position:absolute;left:50%;top:37%;width:118px;height:130px;transform:translate(-50%,-50%) rotateY(-12deg);filter:drop-shadow(0 0 20px rgba(59,180,255,.4));animation:houseHover 3.8s ease-in-out infinite;}
+.house-roof{position:absolute;left:12px;top:7px;width:94px;height:70px;background:linear-gradient(135deg,rgba(92,202,255,.12),rgba(85,102,255,.04));border-top:3px solid #8feaff;border-left:3px solid #68caff;border-right:3px solid #68caff;transform:rotate(45deg) scale(.72);border-radius:5px;box-shadow:0 0 12px rgba(83,196,255,.5);}
+.house-body{position:absolute;left:14px;top:48px;width:90px;height:67px;border:2px solid #73d8ff;background:linear-gradient(145deg,rgba(26,116,206,.45),rgba(49,35,133,.45));box-shadow:inset 0 0 22px rgba(72,176,255,.22),0 0 18px rgba(49,165,255,.28);}
+.house-window{position:absolute;top:13px;width:17px;height:17px;border:2px solid #b6f6ff;background:rgba(60,211,255,.52);box-shadow:0 0 10px #43cfff;}
+.window-left{left:10px}.window-right{right:10px}.house-door{position:absolute;bottom:0;left:35px;width:18px;height:32px;border:1px solid #9aefff;background:rgba(62,183,255,.45);border-bottom:0;}
+.house-base{position:absolute;left:4px;bottom:0;width:110px;height:8px;background:#5fd8ff;box-shadow:0 0 16px #37bfff;opacity:.8;}
+.house-spark{position:absolute;width:5px;height:5px;border-radius:50%;background:#b9f7ff;box-shadow:0 0 12px 3px #4bc8ff;}
+.spark-one{left:3px;top:52px;animation:sparkFloat 2.1s ease-in-out infinite}.spark-two{right:2px;top:28px;animation:sparkFloat 2.7s ease-in-out infinite .4s}.spark-three{right:18px;bottom:34px;animation:sparkFloat 2.4s ease-in-out infinite .8s}.spark-four{left:25px;bottom:20px;animation:sparkFloat 3s ease-in-out infinite .2s}
+.universe-content{position:absolute;left:16px;right:16px;bottom:8%;z-index:2;text-align:center;animation:universeContentIn 1.2s cubic-bezier(.2,.8,.2,1) both;}
+.universe-eyebrow{font-size:11px;letter-spacing:.24em;font-weight:700;color:#9edfff;text-transform:uppercase;display:flex;justify-content:center;align-items:center;gap:9px;}
+.eyebrow-pulse,.status-dot{width:7px;height:7px;border-radius:50%;background:#5df5ff;box-shadow:0 0 12px #43e7ff;display:inline-block;animation:statusPulse 1.3s ease-in-out infinite;}
+.universe-title{margin-top:13px;color:#f5fbff;font-size:clamp(35px,7vw,64px);font-weight:800;letter-spacing:-.055em;line-height:1.04;text-shadow:0 0 28px rgba(78,161,255,.32);}
+.universe-title span{color:#75dfff;text-shadow:0 0 24px rgba(59,194,255,.7);}
+.universe-subtitle{margin-top:12px;font-size:11px;letter-spacing:.32em;color:#9bb9e4;font-weight:600;}
+.universe-divider{width:190px;max-width:60%;height:2px;background:rgba(116,184,255,.13);margin:20px auto 15px;overflow:hidden;}
+.universe-divider span{display:block;width:38%;height:100%;background:linear-gradient(90deg,transparent,#65efff,#9e79ff,transparent);box-shadow:0 0 12px #5adfff;animation:universeDividerSweep 1.8s ease-in-out infinite;}
+.universe-status{display:flex;justify-content:center;align-items:center;gap:8px;color:#c3d7f3;font-size:12px;letter-spacing:.03em;}
+.status-ellipsis{width:13px;text-align:left;overflow:hidden;animation:ellipsisBlink 1s steps(4,end) infinite;}
+.universe-progress{width:180px;max-width:55%;height:3px;border-radius:5px;background:rgba(116,184,255,.15);margin:14px auto 0;overflow:hidden;}
+.universe-progress span{display:block;width:36%;height:100%;border-radius:5px;background:linear-gradient(90deg,#4c8dff,#63f0ff,#b17aff);box-shadow:0 0 12px #5adfff;animation:universeProgress 4.8s ease-in-out forwards;}
+.universe-footer{margin-top:18px;font-size:9px;letter-spacing:.28em;color:rgba(164,195,236,.55);}.universe-footer i{font-style:normal;color:#68dfff;padding:0 6px;}
+@keyframes universeStarDrift{to{background-position:310px 260px}}
+@keyframes universeNebulaA{to{transform:translate(15%,8%) scale(1.18)}}@keyframes universeNebulaB{to{transform:translate(-13%,-10%) scale(1.12)}}
+@keyframes universeGridMove{to{background-position:0 48px}}
+@keyframes universeSceneFloat{0%,100%{margin-top:0}50%{margin-top:-8px}}
+@keyframes universeOrbitOne{to{transform:translate(-50%,-50%) rotateX(68deg) rotateZ(360deg)}}@keyframes universeOrbitTwo{to{transform:translate(-50%,-50%) rotateX(67deg) rotateZ(415deg)}}
+@keyframes universeScan{0%,100%{opacity:0;transform:translate(-50%,-50%) scaleX(.35)}45%{opacity:.9;transform:translate(-50%,-50%) scaleX(1)}}
+@keyframes platformPulse{0%,100%{opacity:.65;transform:translate(-50%,-50%) rotateX(68deg) scale(.96)}50%{opacity:1;transform:translate(-50%,-50%) rotateX(68deg) scale(1.04)}}
+@keyframes houseHover{0%,100%{transform:translate(-50%,-50%) rotateY(-12deg) translateY(0)}50%{transform:translate(-50%,-50%) rotateY(12deg) translateY(-8px)}}
+@keyframes sparkFloat{0%,100%{transform:translateY(0) scale(.8);opacity:.5}50%{transform:translateY(-13px) scale(1.2);opacity:1}}
+@keyframes universeContentIn{from{opacity:0;transform:translateY(20px);filter:blur(7px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+@keyframes universeDividerSweep{0%{transform:translateX(-130%)}100%{transform:translateX(350%)}}
+@keyframes statusPulse{0%,100%{opacity:.5;transform:scale(.8)}50%{opacity:1;transform:scale(1.15)}}
+@keyframes ellipsisBlink{0%{opacity:.2}50%{opacity:1}100%{opacity:.35}}
+@keyframes universeProgress{0%{transform:translateX(-110%)}70%{transform:translateX(130%)}100%{transform:translateX(300%)}}
+/* Full, readable AI Property Universe splash layout */
+.universe-scene{width:min(96vw,760px);height:min(49vh,430px);}
+.universe-house-platform{transform:translate(-50%,-50%) scale(1.16);}
+.universe-content{
+  left:12px;right:12px;bottom:max(3.5%, env(safe-area-inset-bottom));
+  padding:18px 14px 16px;margin:0 auto;max-width:760px;
+  border:1px solid rgba(112,190,255,.18);border-radius:22px;
+  background:linear-gradient(145deg,rgba(9,22,48,.72),rgba(11,12,37,.58));
+  box-shadow:0 16px 55px rgba(0,0,0,.28),inset 0 1px rgba(255,255,255,.06);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+}
+.universe-eyebrow{font-size:clamp(9px,1.5vw,12px);letter-spacing:.16em;line-height:1.5;flex-wrap:wrap;}
+.universe-title{font-size:clamp(39px,7vw,66px);line-height:1.05;margin-top:9px;}
+.universe-subtitle{font-size:clamp(9px,1.5vw,12px);letter-spacing:.2em;line-height:1.6;margin-top:8px;}
+.universe-divider{margin:13px auto 11px;}
+.universe-status{font-size:clamp(11px,1.7vw,13px);line-height:1.5;flex-wrap:wrap;}
+.universe-progress{margin-top:11px;width:min(260px,72%);}
+.universe-footer{font-size:clamp(8px,1.2vw,10px);letter-spacing:.18em;margin-top:13px;line-height:1.6;}
+@media(max-width:600px){
+ .universe-scene{top:0;width:100vw;height:43vh;min-height:260px;transform:translateX(-50%) scale(.94);transform-origin:top center}
+ .universe-house-platform{transform:translate(-50%,-50%) scale(.98)}
+ .universe-content{bottom:max(2.5%,env(safe-area-inset-bottom));padding:15px 10px 13px;border-radius:18px;}
+ .universe-eyebrow{font-size:9px;letter-spacing:.11em;gap:6px}
+ .universe-title{font-size:clamp(37px,10vw,49px);margin-top:7px}
+ .universe-subtitle{font-size:9px;letter-spacing:.14em;margin-top:7px}
+ .universe-divider{margin:10px auto 9px}
+ .universe-status{font-size:11px;gap:6px}
+ .universe-progress{margin-top:9px}
+ .universe-footer{font-size:8px;letter-spacing:.12em;margin-top:10px}
+ .universe-orbit.orbit-three{width:320px}
+}
+@media(max-height:650px){
+ .universe-scene{top:-2%;height:39vh;min-height:220px;transform:translateX(-50%) scale(.76);transform-origin:top center}
+ .universe-house-platform{transform:translate(-50%,-50%) scale(.9)}
+ .universe-content{bottom:2%;padding:10px 10px 9px}
+ .universe-title{font-size:clamp(32px,6vw,42px);margin-top:5px}
+ .universe-divider{margin:7px auto}
+ .universe-subtitle{margin-top:5px}
+ .universe-footer{margin-top:6px}
+ .universe-progress{margin-top:6px}
+}
+@media(prefers-reduced-motion:reduce){.universe-stars,.universe-nebula,.universe-grid,.universe-scene,.universe-orbit,.universe-scan,.platform-ring,.holo-house,.house-spark,.universe-content,.universe-divider span,.eyebrow-pulse,.status-dot,.status-ellipsis,.universe-progress span{animation:none!important}}
+
+        .financial-guidance { display:block !important; visibility:visible !important; opacity:1 !important; position:relative; z-index:5; margin:24px 0; padding:24px; border:1px solid rgba(88,166,255,.55); border-radius:20px; background:linear-gradient(135deg,rgba(17,31,58,.98),rgba(31,23,66,.96)); color:#f4f7ff; box-shadow:0 14px 42px rgba(0,0,0,.28); }
+        .financial-guidance h3 { margin:14px 0 10px; color:#fff; }
+        .financial-guidance p { color:#e4eaff; line-height:1.7; margin:10px 0; }
+        .financial-guidance .guidance-tag { display:inline-block; padding:8px 12px; border-radius:999px; background:rgba(87,145,255,.18); border:1px solid rgba(87,145,255,.45); color:#dce8ff; font-weight:700; }
+        .financial-guidance .guidance-warning { margin-top:14px; padding:12px; border-radius:12px; background:rgba(255,255,255,.06); color:#cbd5e1; font-size:.9rem; line-height:1.6; }
+        @media(max-width:600px){ .financial-guidance{padding:17px;margin:18px 0;border-radius:16px;} .financial-guidance p{font-size:.95rem;} }
+        </style>
 
 </head>
 
 <body>
 
+<!-- Animated background layers: decorative only; dashboard content remains interactive -->
+<div class="ambient-aurora" aria-hidden="true">
+    <div class="aurora-blob blue"></div>
+    <div class="aurora-blob purple"></div>
+    <div class="aurora-blob teal"></div>
+</div>
+<div class="ambient-grid" aria-hidden="true"></div>
+<canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+
+
 
 <!-- ================= WELCOME SPLASH ================= -->
 
 <div id="welcome-screen" aria-label="Welcome to SmartHome AI">
+    <div class="universe-stars" aria-hidden="true"></div>
+    <div class="universe-nebula nebula-a" aria-hidden="true"></div>
+    <div class="universe-nebula nebula-b" aria-hidden="true"></div>
+    <div class="universe-grid" aria-hidden="true"></div>
 
-    <div class="welcome-orb one"></div>
-    <div class="welcome-orb two"></div>
-
-    <div class="welcome-content">
-
-        <div class="welcome-house">
-            🏠
+    <div class="universe-scene" aria-hidden="true">
+        <div class="universe-orbit orbit-one"></div>
+        <div class="universe-orbit orbit-two"></div>
+        <div class="universe-orbit orbit-three"></div>
+        <div class="universe-scan"></div>
+        <div class="universe-house-platform">
+            <div class="platform-ring"></div>
+            <div class="holo-house">
+                <div class="house-roof"></div>
+                <div class="house-body">
+                    <div class="house-window window-left"></div>
+                    <div class="house-window window-right"></div>
+                    <div class="house-door"></div>
+                </div>
+                <div class="house-base"></div>
+            </div>
+            <div class="house-spark spark-one"></div>
+            <div class="house-spark spark-two"></div>
+            <div class="house-spark spark-three"></div>
+            <div class="house-spark spark-four"></div>
         </div>
-
-        <div class="welcome-small">
-            INTELLIGENT PROPERTY PLATFORM
-        </div>
-
-        <div class="welcome-title">
-            SmartHome AI
-        </div>
-
-        <div class="welcome-subtitle">
-            House Price Intelligence • ML Powered
-        </div>
-
-        <div class="welcome-line">
-            <span></span>
-        </div>
-
-        <div class="welcome-status">
-            Preparing your smart property dashboard...
-        </div>
-
     </div>
 
+    <div class="universe-content">
+        <div class="universe-eyebrow"><span class="eyebrow-pulse"></span> NEXT-GEN PROPERTY INTELLIGENCE</div>
+        <div class="universe-title">SmartHome <span>AI</span></div>
+        <div class="universe-subtitle">HOUSE PRICE INTELLIGENCE</div>
+        <div class="universe-divider"><span></span></div>
+        <div class="universe-status"><span class="status-dot"></span><span id="universe-status-text">Initializing property universe</span><span class="status-ellipsis">...</span></div>
+        <div class="universe-progress"><span></span></div>
+        <div class="universe-footer">PREDICT <i>•</i> COMPARE <i>•</i> DISCOVER</div>
+    </div>
 </div>
 
 <div class="container">
@@ -468,6 +735,24 @@
             <div class="price">₹ {{ prediction }} Lakhs</div>
             <div class="result-caption">Machine-learning based estimate • Powered by SmartHome AI</div>
             <div class="result-scan"></div>
+        </div>
+
+        <div class="financial-guidance">
+            <div class="guidance-tag">💳 Financial Guidance — What This Price Means</div>
+            {% if prediction < 75 %}
+                <h3>🟢 Relatively Lower-Priced Property</h3>
+                <p><strong>If your budget is limited:</strong> This estimate falls in the lower-price band of this project's sample range. It may be easier to explore than a premium-priced property, but first check your down payment, monthly EMI, registration charges, maintenance and emergency savings.</p>
+                <p><strong>If your budget is higher:</strong> Compare this property with a few alternatives before deciding. A lower price alone does not mean better value; check the location, building condition, resale demand and repair costs.</p>
+            {% elif prediction < 130 %}
+                <h3>🟡 Mid-Range Estimated Property</h3>
+                <p><strong>If your budget is limited:</strong> Check whether the full monthly EMI and ownership costs comfortably fit your income. If they stretch your budget, compare a smaller or lower-priced option rather than relying only on the estimated price.</p>
+                <p><strong>If your budget is higher:</strong> Compare the features and location with higher-priced properties. Pay extra only when the additional space, condition or amenities are genuinely useful to you.</p>
+            {% else %}
+                <h3>🔵 Relatively Higher-Priced Property</h3>
+                <p><strong>If your budget is limited:</strong> This estimate is in the higher-price band of this project's sample range. Consider lower-priced alternatives and calculate the down payment, EMI, taxes, maintenance and repair costs before making a commitment.</p>
+                <p><strong>If your budget is higher:</strong> Check whether the property justifies the cost through location, construction quality, usable area and amenities. Compare similar properties and avoid assuming that a higher price guarantees appreciation or profit.</p>
+            {% endif %}
+            <div class="guidance-warning">ℹ️ Price bands are relative to this project's sample/model range, not the whole real-estate market. This is general budgeting guidance, not a loan approval, affordability calculation or financial advice.</div>
         </div>
 
         {% if insights %}
@@ -630,6 +915,34 @@
             </div>
         </div>
         <div class="winner"><div class="winner-title">🏆 Comparison Result</div><div class="winner-name">{{ comparison.winner }}</div></div>
+
+        <div class="financial-guidance comparison-financial-guidance">
+            <div class="guidance-tag">💳 Financial Guidance for Both Properties</div>
+            <h3>🏠 Property 1 — ₹ {{ comparison.price1 }} Lakhs</h3>
+            {% if comparison.price1 < 75 %}
+                <p><strong>If your budget is limited:</strong> Property 1 is in the lower-price band of this project's sample range. Still check down payment, EMI, registration, maintenance and emergency savings before deciding.</p>
+                <p><strong>If your budget is higher:</strong> Compare Property 1 with other homes in the same location and check condition, resale demand and repair costs. A lower price alone does not guarantee better value.</p>
+            {% elif comparison.price1 < 130 %}
+                <p><strong>If your budget is limited:</strong> Check whether the full EMI and ownership costs fit comfortably within your income. If not, consider a lower-priced alternative.</p>
+                <p><strong>If your budget is higher:</strong> Compare Property 1's area, location and condition with alternatives; pay more only for features you actually need.</p>
+            {% else %}
+                <p><strong>If your budget is limited:</strong> Property 1 is in the higher-price band of this project's sample range. Consider lower-priced alternatives and calculate the full EMI and ownership costs first.</p>
+                <p><strong>If your budget is higher:</strong> Check whether its location, construction quality, usable area and amenities justify the price. A higher estimate does not guarantee appreciation or profit.</p>
+            {% endif %}
+
+            <h3>🏡 Property 2 — ₹ {{ comparison.price2 }} Lakhs</h3>
+            {% if comparison.price2 < 75 %}
+                <p><strong>If your budget is limited:</strong> Property 2 is in the lower-price band of this project's sample range. Check the down payment, EMI, registration, maintenance and repair costs to see whether it fits your budget.</p>
+                <p><strong>If your budget is higher:</strong> Compare its location, condition and resale demand with similar homes; do not choose it on price alone.</p>
+            {% elif comparison.price2 < 130 %}
+                <p><strong>If your budget is limited:</strong> Check whether the full EMI and ongoing costs fit comfortably within your income. If they stretch your budget, look at a lower-priced option.</p>
+                <p><strong>If your budget is higher:</strong> Compare its features and location with other properties and make sure any extra cost brings real value to you.</p>
+            {% else %}
+                <p><strong>If your budget is limited:</strong> Property 2 is in the higher-price band of this project's sample range. Compare lower-priced options and calculate the down payment, EMI and other ownership costs before deciding.</p>
+                <p><strong>If your budget is higher:</strong> Check whether location, condition, usable area and amenities justify the higher estimate. A higher price alone does not guarantee profit.</p>
+            {% endif %}
+            <div class="guidance-warning">ℹ️ These price bands are relative to this project's sample/model range, not the whole property market. Compare both estimates with actual local listings and your own budget; this is general guidance, not loan approval or personal financial advice.</div>
+        </div>
         <div class="comparison-tip">💡 Compare estimated value together with location, condition, age and other property features.</div>
         {% endif %}
     </div>
@@ -728,28 +1041,203 @@
 
         if (!welcomeScreen) return;
 
-        const alreadyWelcomed = sessionStorage.getItem("smarthome_ai_welcomed");
-
-        if (alreadyWelcomed === "1") {
-            welcomeScreen.remove();
-            document.body.classList.remove("splash-active");
-            return;
-        }
-
+        /* Show the welcome animation on every page load */
         document.body.classList.add("splash-active");
+        const statusText = document.getElementById("universe-status-text");
+        const statusMessages = ["Initializing property universe", "Scanning valuation signals", "Preparing your smart dashboard"];
+        let statusIndex = 0;
+        const statusInterval = window.setInterval(function () {
+            statusIndex = (statusIndex + 1) % statusMessages.length;
+            if (statusText) statusText.textContent = statusMessages[statusIndex];
+        }, 1450);
 
         window.setTimeout(function () {
+            window.clearInterval(statusInterval);
             welcomeScreen.classList.add("hide");
             document.body.classList.remove("splash-active");
 
             window.setTimeout(function () {
                 welcomeScreen.remove();
             }, 700);
-
-            sessionStorage.setItem("smarthome_ai_welcomed", "1");
-        }, 5000);
+        }, 6200);
     })();
 </script>
+
+
+<script>
+/* ================= SUBTLE MOVING AI PARTICLES ================= */
+(function () {
+    const canvas = document.getElementById("ambient-canvas");
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reducedMotion) return;
+
+    let width = 0, height = 0, particles = [], raf = 0;
+    const spacing = window.innerWidth < 700 ? 115 : 145;
+    const particleCount = Math.min(72, Math.max(28, Math.floor((window.innerWidth * window.innerHeight) / 22000)));
+
+    function resize() {
+        const dpr = Math.min(window.devicePixelRatio || 1, 1.6);
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = Math.floor(width * dpr);
+        canvas.height = Math.floor(height * dpr);
+        canvas.style.width = width + "px";
+        canvas.style.height = height + "px";
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        particles = Array.from({length: particleCount}, () => ({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            vx: (Math.random() - .5) * .24,
+            vy: (Math.random() - .5) * .24,
+            r: Math.random() * 1.5 + .5
+        }));
+    }
+
+    function draw() {
+        ctx.clearRect(0, 0, width, height);
+        for (let i = 0; i < particles.length; i++) {
+            const a = particles[i];
+            a.x += a.vx; a.y += a.vy;
+            if (a.x < -10) a.x = width + 10;
+            if (a.x > width + 10) a.x = -10;
+            if (a.y < -10) a.y = height + 10;
+            if (a.y > height + 10) a.y = -10;
+
+            ctx.beginPath();
+            ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2);
+            ctx.fillStyle = "rgba(153,190,255,.58)";
+            ctx.fill();
+
+            for (let j = i + 1; j < particles.length; j++) {
+                const b = particles[j];
+                const dx = a.x - b.x, dy = a.y - b.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < spacing) {
+                    ctx.beginPath();
+                    ctx.moveTo(a.x, a.y);
+                    ctx.lineTo(b.x, b.y);
+                    ctx.strokeStyle = "rgba(104,143,255," + ((1 - dist / spacing) * .13) + ")";
+                    ctx.lineWidth = .7;
+                    ctx.stroke();
+                }
+            }
+        }
+        raf = window.requestAnimationFrame(draw);
+    }
+
+    resize();
+    draw();
+    window.addEventListener("resize", resize, {passive:true});
+    document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+            window.cancelAnimationFrame(raf);
+        } else {
+            window.cancelAnimationFrame(raf);
+            draw();
+        }
+    });
+})();
+</script>
+
+
+
+<script>
+/* Subtle pointer-based 3D tilt on larger screens; all interactions/forms remain untouched. */
+(function () {
+    const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const finePointer = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (reduceMotion || !finePointer) return;
+
+    const selectors = [
+        '.main-card', '.compare-card', '.performance-card', '.graph-card',
+        '.insights-card', '.investment-card', '.decision-card', '.analytics-tile',
+        '.feature', '.property-box', '.comparison-result-card',
+        '.history-premium', '.comparison-history-premium'
+    ].join(',');
+
+    document.querySelectorAll(selectors).forEach(function (card) {
+        let frame = null;
+        card.addEventListener('pointermove', function (event) {
+            const rect = card.getBoundingClientRect();
+            const x = (event.clientX - rect.left) / rect.width;
+            const y = (event.clientY - rect.top) / rect.height;
+            const rotateY = (x - 0.5) * 3.2;
+            const rotateX = (0.5 - y) * 2.6;
+            if (frame) cancelAnimationFrame(frame);
+            frame = requestAnimationFrame(function () {
+                card.style.transform = 'perspective(1100px) rotateX(' + rotateX.toFixed(2) + 'deg) rotateY(' + rotateY.toFixed(2) + 'deg) translateY(-2px)';
+            });
+        }, {passive:true});
+        card.addEventListener('pointerleave', function () {
+            if (frame) cancelAnimationFrame(frame);
+            card.style.transform = '';
+        }, {passive:true});
+    });
+})();
+</script>
+
+<style>
+/* BIG CINEMATIC WELCOME SCREEN */
+
+#welcome-screen .universe-content {
+    position: relative !important;
+    z-index: 999999 !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    padding: 30px 15px !important;
+    transform: scale(1.15) !important;
+}
+
+#welcome-screen .universe-title {
+    font-size: clamp(58px, 11vw, 120px) !important;
+    line-height: 1.1 !important;
+}
+
+#welcome-screen .universe-scene {
+    transform: scale(1.35) !important;
+}
+
+#welcome-screen .universe-title {
+    font-size: clamp(54px, 10vw, 112px) !important;
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+#welcome-screen .universe-subtitle {
+    font-size: clamp(18px, 3vw, 30px) !important;
+    letter-spacing: 5px;
+}
+
+#welcome-screen .universe-scene {
+    transform: scale(1.2);
+}
+
+#welcome-screen .universe-house-platform {
+    transform: scale(1.25);
+}
+
+@media (max-width: 600px) {
+    #welcome-screen .universe-content {
+        transform: scale(1);
+    }
+
+    #welcome-screen .universe-title {
+        font-size: clamp(42px, 12vw, 68px) !important;
+    }
+
+    #welcome-screen .universe-scene {
+        transform: scale(1.08);
+    }
+
+    #welcome-screen .universe-house-platform {
+        transform: scale(1.1);
+    }
+}
+</style>
 
 </body>
 </html>
