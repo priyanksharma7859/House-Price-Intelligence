@@ -647,43 +647,38 @@ body { perspective: var(--scene-perspective); }
 <!-- ================= WELCOME SPLASH ================= -->
 
 <div id="welcome-screen" aria-label="Welcome to SmartHome AI">
-    <div class="universe-stars" aria-hidden="true"></div>
-    <div class="universe-nebula nebula-a" aria-hidden="true"></div>
-    <div class="universe-nebula nebula-b" aria-hidden="true"></div>
-    <div class="universe-grid" aria-hidden="true"></div>
 
-    <div class="universe-scene" aria-hidden="true">
-        <div class="universe-orbit orbit-one"></div>
-        <div class="universe-orbit orbit-two"></div>
-        <div class="universe-orbit orbit-three"></div>
-        <div class="universe-scan"></div>
-        <div class="universe-house-platform">
-            <div class="platform-ring"></div>
-            <div class="holo-house">
-                <div class="house-roof"></div>
-                <div class="house-body">
-                    <div class="house-window window-left"></div>
-                    <div class="house-window window-right"></div>
-                    <div class="house-door"></div>
-                </div>
-                <div class="house-base"></div>
-            </div>
-            <div class="house-spark spark-one"></div>
-            <div class="house-spark spark-two"></div>
-            <div class="house-spark spark-three"></div>
-            <div class="house-spark spark-four"></div>
+    <div class="welcome-orb one"></div>
+    <div class="welcome-orb two"></div>
+
+    <div class="welcome-content">
+
+        <div class="welcome-house">
+            🏠
         </div>
+
+        <div class="welcome-small">
+            INTELLIGENT PROPERTY PLATFORM
+        </div>
+
+        <div class="welcome-title">
+            SmartHome AI
+        </div>
+
+        <div class="welcome-subtitle">
+            House Price Intelligence • ML Powered
+        </div>
+
+        <div class="welcome-line">
+            <span></span>
+        </div>
+
+        <div class="welcome-status">
+            Preparing your smart property dashboard...
+        </div>
+
     </div>
 
-    <div class="universe-content">
-        <div class="universe-eyebrow"><span class="eyebrow-pulse"></span> NEXT-GEN PROPERTY INTELLIGENCE</div>
-        <div class="universe-title">SmartHome <span>AI</span></div>
-        <div class="universe-subtitle">HOUSE PRICE INTELLIGENCE</div>
-        <div class="universe-divider"><span></span></div>
-        <div class="universe-status"><span class="status-dot"></span><span id="universe-status-text">Initializing property universe</span><span class="status-ellipsis">...</span></div>
-        <div class="universe-progress"><span></span></div>
-        <div class="universe-footer">PREDICT <i>•</i> COMPARE <i>•</i> DISCOVER</div>
-    </div>
 </div>
 
 <div class="container">
@@ -1041,25 +1036,26 @@ body { perspective: var(--scene-perspective); }
 
         if (!welcomeScreen) return;
 
-        /* Show the welcome animation on every page load */
+        const alreadyWelcomed = sessionStorage.getItem("smarthome_ai_welcomed");
+
+        if (alreadyWelcomed === "1") {
+            welcomeScreen.remove();
+            document.body.classList.remove("splash-active");
+            return;
+        }
+
         document.body.classList.add("splash-active");
-        const statusText = document.getElementById("universe-status-text");
-        const statusMessages = ["Initializing property universe", "Scanning valuation signals", "Preparing your smart dashboard"];
-        let statusIndex = 0;
-        const statusInterval = window.setInterval(function () {
-            statusIndex = (statusIndex + 1) % statusMessages.length;
-            if (statusText) statusText.textContent = statusMessages[statusIndex];
-        }, 1450);
 
         window.setTimeout(function () {
-            window.clearInterval(statusInterval);
             welcomeScreen.classList.add("hide");
             document.body.classList.remove("splash-active");
 
             window.setTimeout(function () {
                 welcomeScreen.remove();
             }, 700);
-        }, 6200);
+
+            sessionStorage.setItem("smarthome_ai_welcomed", "1");
+        }, 5000);
     })();
 </script>
 
@@ -1180,64 +1176,7 @@ body { perspective: var(--scene-perspective); }
 })();
 </script>
 
-<style>
-/* BIG CINEMATIC WELCOME SCREEN */
 
-#welcome-screen .universe-content {
-    position: relative !important;
-    z-index: 999999 !important;
-    width: 100% !important;
-    max-width: 1200px !important;
-    padding: 30px 15px !important;
-    transform: scale(1.15) !important;
-}
-
-#welcome-screen .universe-title {
-    font-size: clamp(58px, 11vw, 120px) !important;
-    line-height: 1.1 !important;
-}
-
-#welcome-screen .universe-scene {
-    transform: scale(1.35) !important;
-}
-
-#welcome-screen .universe-title {
-    font-size: clamp(54px, 10vw, 112px) !important;
-    line-height: 1.1;
-    font-weight: 900;
-}
-
-#welcome-screen .universe-subtitle {
-    font-size: clamp(18px, 3vw, 30px) !important;
-    letter-spacing: 5px;
-}
-
-#welcome-screen .universe-scene {
-    transform: scale(1.2);
-}
-
-#welcome-screen .universe-house-platform {
-    transform: scale(1.25);
-}
-
-@media (max-width: 600px) {
-    #welcome-screen .universe-content {
-        transform: scale(1);
-    }
-
-    #welcome-screen .universe-title {
-        font-size: clamp(42px, 12vw, 68px) !important;
-    }
-
-    #welcome-screen .universe-scene {
-        transform: scale(1.08);
-    }
-
-    #welcome-screen .universe-house-platform {
-        transform: scale(1.1);
-    }
-}
-</style>
 
 </body>
 </html>
